@@ -35,7 +35,7 @@ The create-react-app sets up nicely jest and gives you a sample test (App.test.j
 Run jest using `npm test` or `yarn test`.
 
 
-These are the tests I came up with.
+These are the [tests](https://github.com/helio-training/react-testing/blob/master/src/__tests__/Login.test.js) I came up with.
 
 ```js
 import React from 'react';
@@ -77,3 +77,10 @@ describe('<Login>', () => {
 Enzyme allows me to 'render' a React component without actually starting up a browser.  Super handy for testing.
 
 Using chai/enzyme combo you can create all sorts of combinations to facilitate testing in React.  It's that simple.
+
+
+### Where does AVA come into play?
+  
+In React application you won't use AVA.  JEST is the test runner that is used by react by default `create-react-app`.  Don't try to use it in this type of project.  
+ 
+Ava is really good for testing a node application.  Use it in the node space.
